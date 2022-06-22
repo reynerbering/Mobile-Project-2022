@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "47757643643",
+    "project_id": "fitrauth-d3011",
+    "storage_bucket": "fitrauth-d3011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47757643643:android:8d08ae278da6cb204777de",
+        "android_client_info": {
+          "package_name": "com.example.fitr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47757643643-nbnlk37hhnide8sv96g1ishmlcrg5mc5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitr",
+            "certificate_hash": "9d4f761c3a9dc36f41e7ebc476b78afe4ef921de"
+          }
+        },
+        {
+          "client_id": "47757643643-as5eh2te2j71l17kbvctbskb7ghcp7ah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADcqhDDORv-BiYIDMYIaZrtyf38m2RBvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47757643643-as5eh2te2j71l17kbvctbskb7ghcp7ah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
