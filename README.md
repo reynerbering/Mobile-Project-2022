@@ -1,6 +1,6 @@
 # fitr
 
-A new Flutter project.
+A diet tracker mobile application
 
 ## Getting Started
 
