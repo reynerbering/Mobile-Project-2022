@@ -1,7 +1,8 @@
+import 'package:fitr/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class WeightScreen extends StatefulWidget {
-  const WeightScreen({ Key? key }) : super(key: key);
+  const WeightScreen({Key? key}) : super(key: key);
 
   @override
   State<WeightScreen> createState() => _WeightScreenState();
@@ -55,7 +56,35 @@ class _WeightScreenState extends State<WeightScreen> {
                   fontWeight: FontWeight.w300,
                   fontSize: 13.0),
             ),
-            
+
+            // DASHBOARD REDIRECT DOCUMENTATION
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
+                minimumSize: const Size(256, 47),
+                primary: Colors.white,
+                onPrimary: Colors.black,
+              ),
+              label: const Text(
+                "FEMALE",
+                style: TextStyle(
+                  fontFamily: 'SF UI Display Light',
+                  fontWeight: FontWeight.w300,
+                  fontSize: 15.0,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const Dashboard()),
+                );
+              },
+              icon: Image.asset(
+                "assets/icons/female.png",
+                height: 20,
+                width: 20,
+              ),
+            ),
           ],
         ),
       ),

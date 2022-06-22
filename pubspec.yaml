@@ -40,6 +40,7 @@ dependencies:
   firebase_core: ^1.15.0
   fluttertoast: ^8.0.9
   scroll_date_picker: ^3.4.0
+  table_calendar: ^3.0.6
 
 dev_dependencies:
   flutter_test:

@@ -1,3 +1,4 @@
+import 'package:fitr/birthdate_screen.dart';
 import 'package:flutter/material.dart';
 
 class GenderScreen extends StatefulWidget {
@@ -59,7 +60,8 @@ class _GenderScreenState extends State<GenderScreen> {
             ),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
                 minimumSize: const Size(256, 47),
                 primary: Colors.white,
                 onPrimary: Colors.black,
@@ -72,7 +74,12 @@ class _GenderScreenState extends State<GenderScreen> {
                   fontSize: 15.0,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => const BirthDateScreen()),
+                );
+              },
               icon: Image.asset(
                 "assets/icons/male.png",
                 height: 20,
@@ -84,7 +91,8 @@ class _GenderScreenState extends State<GenderScreen> {
             ),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
                 minimumSize: const Size(256, 47),
                 primary: Colors.white,
                 onPrimary: Colors.black,
@@ -97,7 +105,12 @@ class _GenderScreenState extends State<GenderScreen> {
                   fontSize: 15.0,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => const BirthDateScreen()),
+                );
+              },
               icon: Image.asset(
                 "assets/icons/female.png",
                 height: 20,

@@ -1,7 +1,8 @@
+import 'package:fitr/weight_screen.dart';
 import 'package:flutter/material.dart';
 
 class HeightScreen extends StatefulWidget {
-  const HeightScreen({ Key? key }) : super(key: key);
+  const HeightScreen({Key? key}) : super(key: key);
 
   @override
   State<HeightScreen> createState() => _HeightScreenState();
@@ -55,7 +56,35 @@ class _HeightScreenState extends State<HeightScreen> {
                   fontWeight: FontWeight.w300,
                   fontSize: 13.0),
             ),
-            
+
+            //REDIRECT BUTTON
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
+                minimumSize: const Size(256, 47),
+                primary: Colors.white,
+                onPrimary: Colors.black,
+              ),
+              label: const Text(
+                "FEMALE",
+                style: TextStyle(
+                  fontFamily: 'SF UI Display Light',
+                  fontWeight: FontWeight.w300,
+                  fontSize: 15.0,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const WeightScreen()),
+                );
+              },
+              icon: Image.asset(
+                "assets/icons/female.png",
+                height: 20,
+                width: 20,
+              ),
+            ),
           ],
         ),
       ),

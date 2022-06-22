@@ -1,3 +1,4 @@
+import 'package:fitr/height_screen.dart';
 import 'package:flutter/material.dart';
 
 class BirthDateScreen extends StatefulWidget {
@@ -55,7 +56,33 @@ class _BirthDateScreenState extends State<BirthDateScreen> {
                   fontWeight: FontWeight.w300,
                   fontSize: 13.0),
             ),
-            
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
+                minimumSize: const Size(256, 47),
+                primary: Colors.white,
+                onPrimary: Colors.black,
+              ),
+              label: const Text(
+                "FEMALE",
+                style: TextStyle(
+                  fontFamily: 'SF UI Display Light',
+                  fontWeight: FontWeight.w300,
+                  fontSize: 15.0,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const HeightScreen()),
+                );
+              },
+              icon: Image.asset(
+                "assets/icons/female.png",
+                height: 20,
+                width: 20,
+              ),
+            ),
           ],
         ),
       ),
